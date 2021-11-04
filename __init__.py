@@ -48,7 +48,7 @@ class Player(BasePlayer):
          widgest=widgets.RadioSelect,
     )
     Employment_status = models.StringField(
-         choices= ['Employed full-time', 'Employed part-time', 'Seeking opportunities', 'Retired'],
+         choices=['Employed full-time', 'Employed part-time', 'Seeking opportunities', 'Retired'],
          label='7. What is your current employemnt status?',
          widget=widgets.RadioSelect,
     )
@@ -59,7 +59,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelect,
     )
     Household_participation = models.StringField(
-        choices= ['More', 'Same number', 'Fewer'],
+        choices=['More', 'Same number', 'Fewer'],
         label='9.In the past five years, does a member of your household participate in more or fewer groups or organisation?',
         widget=widgets.RadioSelect,
     )
@@ -71,7 +71,7 @@ class Player(BasePlayer):
         label='11.In the past 12 months how many times did a member of this household participate in this group of activities,for example doing group or attending meetings?',
         widget=widgets.RadioSelect,
     )
-    Group_Member = models.StringField(
+    Group_member = models.StringField(
         choices=['Born into the group', 'Required to join', 'Invited', 'Voluntary choice'],
         label='12.How does one become a member of this group?',
         widget=widgets.RadioSelect,
@@ -89,32 +89,32 @@ class Player(BasePlayer):
         label='15.What is the main benefit from joining this group?',
         widget=widgets.RadioSelect,
     )
-    Household_access = models.StringField(
+    Household_accessa = models.StringField(
         choices=['Yes', 'No'],
         label='16a.Does the group help your household get access to any of the following services?',
         widget=widgets.RadioSelect,
     )
-    Household_access = models.StringField(
+    Household_accessb = models.StringField(
         choices=['Education', 'Health services', 'Savings or credit', 'Water supply or sanitation', 'Agricultural input or technology', 'Other (specify)'],
         label='16b.Generally, does your household get assistance from the group to access the following categories?',
         widget=widgets.RadioSelect,
     )
-    Group_members = models.StringField(
+    Group_membersa = models.StringField(
         choices=['Yes', 'No'],
         label='17a.Thinking about the members of this group, are most of them of the same',
         widget=widgets.RadioSelect,
     )
-    Group_members = models.StringField(
+    Group_membersb = models.StringField(
         choices=['Neighborhood/Village', 'Family or Kin group', 'Religion', 'Gender', 'Age', 'Ethnic or linguistic group/race/caste/tribe'],
         label='17b.Thinking about the members of this group, are most of them of the coming from the same village or religion to mention the few?',
         widget=widgets.RadioSelect,
     )
-    Same_members = models.StringField(
+    Same_membersa = models.StringField(
         choices=['Yes', 'No'],
         label='18a.Do members mostly have the same?',
         widget=widgets.RadioSelect,
     )
-    Same_members = models.StringField(
+    Same_membersb = models.StringField(
         choices=['Occupation', 'Educational background or level'],
         label='18b.Are these members mostly have the same job or they have the same level of education?',
         widget=widgets.RadioSelect,
@@ -198,67 +198,67 @@ class Player(BasePlayer):
         label='35.Generally speaking, would would you say most people can be trusted or that you cannot be too careful in your dealings with other people?',
         widget=widgets.RadioSelect,
     )
-    Agree_disagree = models.StringField(
+    Thirtysixa = models.StringField(
         choices=[1,'Strongly agree', 2,'Agree somewhat',  3,'Neither agree nor disagree', 4,'Disagree somewhat', 5,'Strongly disagree'],
         label='36a.Most people who lived in this village/neighborhood can be trusted',
         widget=widgets.RadioSelect,
     )
-    Agree_disagree = models.StringField(
+    Thirtysixb = models.StringField(
         choices=[1,'Strongly agree', 2,'Agree somewhat', 3,'Neither agree no disagree', 4,'Disagree somewhat', 5,'Strongly disagree'],
         label='36b.In this village/neighborhood, one has to be alert or someone is likely take advantage of you',
         widget=widgets.RadioSelect,
     )
-    Agree_disagree = models.StringField(
+    Thirtysixc = models.StringField(
         choices=[1,'Strongly agree', 2,'Agree somewhat', 3,'Neither agree nor disagree', 4,'Disagree somewhat', 5,'Strongly disagree'],
         label='36c.Most people in this village/neighborhood are willing to help you if you need it',
         widget=widgets.RadioSelect,
     )
-    Agree_disagree = models.StringField(
+    Thirtysixd = models.StringField(
         choices=[1,'Strongly agree', 2,'Agree somewhat', 3,'Neither agree nor disagree', 4,'Disagree somewhat', 5,'Strongly disagree'],
         label='36d.In this village/neighborhood, people generally do not trust each other in matters of lending or borrowing money',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtysevena = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37a.People from your ethnic or linguistic group/race/tribe etc',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtysevenb = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37b.People from other ethnic or linguistic group/race/tribe etc',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtysevenc = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37c.Shopkeepers',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtysevend = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37d.Local government officials',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtysevene = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37e.Central government officials',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtysevenf = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37f.Police',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtyseveng = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37g.Teachers',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtysevenh = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37h.Nurses and doctors',
         widget=widgets.RadioSelect,
     )
-    Trust_people_category = models.StringField(
+    Thirtyseveni = models.StringField(
         choices=[1,'To a very small extent', 2,'To a small extent', 3,'Neither small nor great extent', 4,'To a great extent', 5,'To a very great extent'],
         label='37i.Strangers',
         widget=widgets.RadioSelect,
@@ -341,11 +341,11 @@ class Player(BasePlayer):
 # PAGES
 class Demographics(Page):
     form_model = 'player'
-    form_fields = ['Gender', 'Age', 'Ethnicity']
+    form_fields = ['Gender', 'Age', 'Ethnicity', 'Education', 'Marital_status', 'Economic_status', 'Employment_status']
 
 class Networks(Page):
     form_model = 'player'
-    form_fields = ['Savings_Group', 'Household_contribution', 'Other_reason']
+    form_fields = ['Savings_Group', 'Household_contribution','Household_belonging', 'Household_group_participation', 'Group_member', 'Household_contribution', 'Household_work_days', 'Group_benefit', 'Household_accessa', 'Household_accessb', 'Group_membersa', 'Group_membersb', 'Same_membersa', 'Same_membersb', 'Rich_poor_members', 'Group_Decision', 'Leadership_elections','Effective_leadership', 'Group_funding', 'Group_advice', 'Original_funder', 'Close_friends', 'Small_money', 'How_many_people', 'Economic_status', 'Other_reason', 'Neighborhood_trust', 'Emergency', 'People_assist', 'Thirtysixa', 'Thirtysixb', 'Thirtysixc', 'Thirtysixd', 'Thirtysevena', 'Thirtysevenb', 'Thirtysevenc', 'Thirtysevend', 'Thirtysevene', 'Thirtysevenf', 'Thirtyseveng', 'Thirtysevenh', 'Thirtyseveni', 'Level_trust_village', 'People_village_help_other','Community_project', 'Post_office', 'Household_read_newspaper', 'Listen_radio', 'Watch_television', 'Nearest_working_telephone', 'Made_received_phone_call', 'Sources_of_information', 'Sources_of_market_information', 'Access_information', 'House_accessible_road', 'Neighboring_village_town']
 
 
 
